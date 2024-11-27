@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input id="input-box" type="text" placeholder="Enter calculation" readonly>
+        <div class="button-container">
+            <button class="number-button" onclick="appendToInput('7')">7</button>
+            <button class="number-button" onclick="appendToInput('8')">8</button>
+            <button class="number-button" onclick="appendToInput('9')">9</button>
+            <button class="operator-button" onclick="setOperator('/')">/</button>
+        </div>
+        <div class="button-container">
+            <button class="number-button" onclick="appendToInput('4')">4</button>
+            <button class="number-button" onclick="appendToInput('5')">5</button>
+            <button class="number-button" onclick="appendToInput('6')">6</button>
+            <button class="operator-button" onclick="setOperator('*')">*</button>
+        </div>
+        <div class="button-container">
+            <button class="number-button" onclick="appendToInput('1')">1</button>
+            <button class="number-button" onclick="appendToInput('2')">2</button>
+            <button class="number-button" onclick="appendToInput('3')">3</button>
+            <button class="operator-button" onclick="setOperator('-')">-</button>
+        </div>
+        <div class="button-container">
+            <button class="number-button" onclick="appendToInput('0')">0</button>
+            <button class="number-button" onclick="appendToInput('.')">.</button>
+            <button class="clear-button" onclick="clearCalc()">C</button>
+            <button class="operator-button" onclick="setOperator('+')">+</button>
+        </div>
+        <div class="button-container">
+            <button class="operator-button" onclick="setOperator('%')">%</button>
+            <button class="operator-button" onclick="setOperator('^')">^</button>
+            <button class="operator-button" onclick="setOperator('sqrt')">sqrt</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

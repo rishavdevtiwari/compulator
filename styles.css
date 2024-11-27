@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Further reduced padding */
+    width: 250px; /* Further reduced width */
+}
+
+#input-box {
+    width: 95%;
+    height: 30px; /* Further reduced height */
+    font-size: 18px; /* Further reduced font size */
+    text-align: right;
+    margin-bottom: 10px; /* Further reduced margin */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px; /* Further reduced margin */
+}
+
+button {
+    width: 50px; /* Further reduced button width */
+    height: 50px; /* Further reduced button height */
+    font-size: 18px; /* Further reduced font size */
+    border: none;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/* Number buttons */
+.number-button {
+    background-color: grey;
+    color: black;
+}
+
+.number-button:hover {
+    background-color: #a9a9a9; /* Slightly lighter grey on hover */
+}
+
+/* Operator buttons */
+.operator-button {
+    background-color: black;
+    color: white;
+}
+
+.operator-button:hover {
+    background-color: grey; 
+}
+
+.clear-button {
+    background-color: yellow;
+    color: white;
+}
+
+.clear-button:hover {
+    background-color: orange;
+}
+
+button:active {
+    background-color: #004085;
+}
